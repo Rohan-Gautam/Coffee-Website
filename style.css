@@ -4,9 +4,10 @@
     background-color:black;
   }
   .navbar{
+      color:white;
     height:25vh;
     width:100%;
-    background-color:red;
+    background-color:black;
     display:flex;
     justify-content:center;
     align-items:center;
