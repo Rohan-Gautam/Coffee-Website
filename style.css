@@ -20,28 +20,33 @@
     justify-content: center;
     align-items:center;
   }
-  .left{
+   .left{
     width:50%;
-    height:75vh;
+    height:80vh;
     background-color:black;
     display:flex;
-    justify-content:flex-end;
+    flex-direction:column;
+    justify-content:center;
     align-items:center;
     color:white;
+
   }
   .left h1 {
-    font-size: 36px; /* Adjust font size if needed */
-    margin-bottom: 20px; /* Space below the h1 */
+    color: #e04d4d;
+    margin-bottom: 10px;
+}
+.left h2 {
+  margin-bottom: 20px;
 }
 
-.left h2 {
-    font-size: 24px; /* Adjust font size if needed */
-    margin-top: 10px; /* Space above the h2 */
+.left p {
+  margin: 10px;
+  color: #666;
 }
 
   .right{
     width:50%;
-    height:75vh;
+    height:80vh;
     background-color:black;
     display:flex;
     justify-content:flex-start;
