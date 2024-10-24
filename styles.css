@@ -1,75 +1,219 @@
-  *{
-      background-color:black;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
 
-.container1{
-    height:100vh;
-    width:100%;
-  }
-  .navbar{
-      color:white;
-    height:20vh;
-    width:100%;
-    background-color:black;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
-  .box1{
-    height:75vh;
+.container1 {
+    height: 100vh;
+    width: 100%;
+}
 
-    width:100%;
-    display:flex;
-    flex-direction:row;
+/* Navbar */
+.navbar {
+    color: white;
+    height: 20vh;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: saddlebrown;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.navbar .menu {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .highlight {
+    display: block;
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+.highlight {
+    background-color: sandybrown;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+    align-items: center;
     justify-content: center;
-    align-items:center;
-  }
-   .left{
-    width:50%;
-    height:80vh;
-    background-color:black;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    color:white;
-
-  }
-   .heading{
-       display:flex;
-       justify-content:flex-end;
-       align-items:center;
-  height:15vh;
-  width:100%;
-
-
-}
-.description{
-   display:flex;
-    justify-content:flex-end;
-   align-items:center;
-  height:20vh;
-  width:50%;
-  color: #666;
-}
-.button{
-height:20vh;
-width:100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
+.highlight:hover {
+    transform: scale(1.05);
+    color: saddlebrown;
+}
 
-  .right{
-    width:50%;
-    height:80vh;
-    background-color:black;
-    display:flex;
-    justify-content:flex-start;
-    align-items:center;
+.highlight:active {
+    transform: scale(0.95);
+}
 
-  }
-  .main{
-    object-fit:fill;
-    width:60%;
-    height:85%;
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
 
-  }
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .highlight {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu.open {
+    height: 325px;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 992px) {
+    .navbar .nav ul {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar .menu i {
+        display: inline-block;
+    }
+
+    .navbar .highlight {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu .highlight {
+        display: block;
+        margin-top: 1rem;
+    }
+}
+
+/* Box1 Styles */
+.box1 {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    height: 75vh;
+   /* Changed to make it more visible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 80%;
+    color: #ccc; /* Adjusted for visibility */
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right {
+    color: white;
+    width: 50%;
+    height: 75vh;
+     /* Same as left to keep the color consistent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    object-fit: fill;
+    width: 60%;
+    height: 85%;
+}
