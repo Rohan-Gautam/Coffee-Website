@@ -2,22 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
-
 .container1 {
-
     height: 100vh;
     width: 100%;
-
 }
-
 /* Navbar */
 /* Navbar */
 /* Navbar with Blurred Background */
 .navbar {
-
     position:sticky;
     top: 0;
     left: 0;
