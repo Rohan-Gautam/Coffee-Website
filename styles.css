@@ -3,28 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 
+
 }
 
 .container1 {
+
     height: 100vh;
     width: 100%;
-    background-color:black;
+
 }
 
 /* Navbar */
 /* Navbar */
 /* Navbar with Blurred Background */
 .navbar {
-    position: sticky;
+
+    position:sticky;
     top: 0;
     left: 0;
     right: 0;
     height: 15vh; /* Adjust height as needed */
     width: 100%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.2); /* Transparent black background */
-    backdrop-filter: blur(20px); /* Adjust blur level for more pronounced effect */
-    -webkit-backdrop-filter: blur(20px); /* For better support on Safari */
+    background-color: rgba(2, 2, 2, 0.89); /* Transparent black background */
+    backdrop-filter: blur(2px); /* Adjust blur level for more pronounced effect */
+    -webkit-backdrop-filter: blur(2px); /* For better support on Safari */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,11 +34,9 @@
     padding: 0 2rem;
     z-index: 1000; /* Ensure navbar stays on top */
 }
-
-
-
 li {
     list-style: none;
+    margin:4px;
 }
 
 a {
@@ -163,7 +163,8 @@ a:hover {
 }
 
 /* Box1 Styles */.box1 {
-    height: 80vh; /* Adjusted height */
+   background-color:black;
+    height: 85vh; /* Adjusted height */
     width:100%;
     display: flex;
     flex-direction: row;
